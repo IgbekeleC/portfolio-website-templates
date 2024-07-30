@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.column {
+    position: relative;
+    width: 25%;
+    height: 300px;
+    overflow: hidden;
+    margin: 10px;
+    background-size: cover;
+    background-position: center;
+}
+
+.column:nth-child(1) {
+    background-image: url('background1.jpg');
+}
+
+.column:nth-child(2) {
+    background-image: url('background2.jpg');
+}
+
+.column:nth-child(3) {
+    background-image: url('background3.jpg');
+}
+
+.column:nth-child(4) {
+    background-image: url('background4.jpg');
+}
+
+.column:nth-child(5) {
+    background-image: url('background5.jpg');
+}
+
+.column:nth-child(6) {
+    background-image: url('background6.jpg');
+}
+
+.column:nth-child(7) {
+    background-image: url('background7.jpg');
+}
+
+.column:nth-child(8) {
+    background-image: url('background8.jpg');
+}
+
+.content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.hover-img {
+    width: 50%;
+    cursor: pointer;
+}
+
+.text {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    color: white;
+    text-align: center;
+}
+
+.column:hover .overlay {
+    opacity: 1;
+}
+
+.column:hover .text {
+    display: none;
+}

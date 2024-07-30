@@ -1,0 +1,248 @@
+<div class="custom-portfolio">
+    <style>
+        .custom-portfolio * {
+            box-sizing: border-box;
+        }
+
+        .custom-portfolio body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .custom-portfolio .portfolio-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .custom-portfolio .row {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            justify-content: center;
+        }
+
+        .custom-portfolio .column {
+            position: relative;
+            width: 23.5%;
+            height: 280px;
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            overflow: hidden;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .custom-portfolio .column:nth-child(1) {
+            background-image: url('https://micbtech.com/static/images/wbdev1.94fd9e5a6a9e.jpg');
+        }
+
+        .custom-portfolio .column:nth-child(2) {
+            background-image: url('https://micbtech.com/static/images/wbdev1.94fd9e5a6a9e.jpg');
+        }
+
+        .custom-portfolio .column:nth-child(3) {
+            background-image: url('https://micbtech.com/static/images/wbdev1.94fd9e5a6a9e.jpg');
+        }
+
+        .custom-portfolio .column:nth-child(4) {
+            background-image: url('https://micbtech.com/static/images/wbdev1.94fd9e5a6a9e.jpg');
+        }
+
+        .custom-portfolio .column:nth-child(5) {
+            background-image: url('https://micbtech.com/static/images/wbdev1.94fd9e5a6a9e.jpg');
+        }
+
+        .custom-portfolio .column:nth-child(6) {
+            background-image: url('https://micbtech.com/static/images/wbdev1.94fd9e5a6a9e.jpg');
+        }
+
+        .custom-portfolio .column:nth-child(7) {
+            background-image: url('https://micbtech.com/static/images/wbdev1.94fd9e5a6a9e.jpg');
+        }
+
+        .custom-portfolio .column:nth-child(8) {
+            background-image: url('https://micbtech.com/static/images/wbdev1.94fd9e5a6a9e.jpg');
+        }
+
+        .custom-portfolio .content {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        .custom-portfolio .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .custom-portfolio .hover-img {
+            width: 100%;
+            cursor: pointer;
+        }
+
+        .custom-portfolio .text {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            right: 10px;
+            color: white;
+            text-align: center;
+        }
+
+        .custom-portfolio .column:hover .overlay {
+            opacity: 1;
+        }
+
+        .custom-portfolio .column:hover .text {
+            display: none;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 1200px) {
+            .custom-portfolio .column {
+                width: 50%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .custom-portfolio .column {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .custom-portfolio .text {
+                font-size: 14px;
+            }
+
+            .custom-portfolio .hover-img {
+                width: 70%;
+            }
+        }
+    </style>
+
+    <div class="portfolio-container">
+        <!-- Row 1 -->
+        <div class="row">
+            <div class="column">
+                <div class="content">
+                    <div class="overlay">
+                        <a href="link1.html" target="_blank">
+                            <img src="https://micbtech.com/static/images/pix.039fedc13c6a.jpg" alt="Hover Image 1" class="hover-img">
+                        </a>
+                    </div>
+                    <div class="text">
+                        <h3>Title 1</h3>
+                        <p>Description 1</p>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="content">
+                    <div class="overlay">
+                        <a href="link2.html" target="_blank">
+                            <img src="https://micbtech.com/static/images/pix.039fedc13c6a.jpg" alt="Hover Image 2" class="hover-img">
+                        </a>
+                    </div>
+                    <div class="text">
+                        <h3>Title 2</h3>
+                        <p>Description 2</p>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="content">
+                    <div class="overlay">
+                        <a href="link3.html" target="_blank">
+                            <img src="https://micbtech.com/static/images/pix.039fedc13c6a.jpg" alt="Hover Image 3" class="hover-img">
+                        </a>
+                    </div>
+                    <div class="text">
+                        <h3>Title 3</h3>
+                        <p>Description 3</p>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="content">
+                    <div class="overlay">
+                        <a href="link4.html" target="_blank">
+                            <img src="https://micbtech.com/static/images/pix.039fedc13c6a.jpg" alt="Hover Image 4" class="hover-img">
+                        </a>
+                    </div>
+                    <div class="text">
+                        <h3>Title 4</h3>
+                        <p>Description 4</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Row 2 -->
+        <div class="row">
+            <div class="column">
+                <div class="content">
+                    <div class="overlay">
+                        <a href="link5.html" target="_blank">
+                            <img src="https://micbtech.com/static/images/pix.039fedc13c6a.jpg" alt="Hover Image 5" class="hover-img">
+                        </a>
+                    </div>
+                    <div class="text">
+                        <h3>Title 5</h3>
+                        <p>Description 5</p>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="content">
+                    <div class="overlay">
+                        <a href="link6.html" target="_blank">
+                            <img src="https://micbtech.com/static/images/pix.039fedc13c6a.jpg" alt="Hover Image 6" class="hover-img">
+                        </a>
+                    </div>
+                    <div class="text">
+                        <h3>Title 6</h3>
+                        <p>Description 6</p>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="content">
+                    <div class="overlay">
+                        <a href="link7.html" target="_blank">
+                            <img src="https://micbtech.com/static/images/pix.039fedc13c6a.jpg" alt="Hover Image 7" class="hover-img">
+                        </a>
+                    </div>
+                    <div class="text">
+                        <h3>Title 7</h3>
+                        <p>Description 7</p>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="content">
+                    <div class="overlay">
+                        <a href="link8.html" target="_blank">
+                            <img src="https://micbtech.com/static/images/pix.039fedc13c6a.jpg" alt="Hover Image 8" class="hover-img">
+                        </a>
+                    </div>
+                    <div class="text">
+                        <h3>Title 8</h3>
+                        <p>Description 8</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
